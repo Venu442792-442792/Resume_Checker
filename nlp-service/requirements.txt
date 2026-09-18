@@ -1,0 +1,13 @@
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+python-multipart==0.0.9
+pdfplumber==0.11.4
+spacy==3.7.6
+scikit-learn==1.5.2
+numpy==1.26.4
+pydantic==2.9.2
+pydantic-settings==2.5.2
+
+# spaCy small English model, installed directly from its wheel URL so a plain
+# `pip install -r requirements.txt` is enough (no separate `spacy download` step).
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl

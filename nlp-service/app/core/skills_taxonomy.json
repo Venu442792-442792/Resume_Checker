@@ -1,0 +1,37 @@
+[
+  "Java", "Python", "JavaScript", "TypeScript", "C++", "C#", "C", "Go", "Rust",
+  "Ruby", "PHP", "Kotlin", "Swift", "Scala", "R", "MATLAB", "SQL", "Bash Scripting",
+  "Perl", "Dart", "Objective-C",
+
+  "HTML", "CSS", "Sass", "Tailwind CSS", "Bootstrap", "React", "Redux", "Angular",
+  "Vue.js", "Next.js", "Nuxt.js", "jQuery", "Svelte", "Webpack", "Vite",
+
+  "Node.js", "Express.js", "Spring Boot", "Spring Framework", "Django", "Flask",
+  "FastAPI", "ASP.NET", "ASP.NET Core", "Ruby on Rails", "Laravel", "NestJS",
+
+  "PostgreSQL", "MySQL", "MongoDB", "Redis", "Oracle Database", "SQLite",
+  "Cassandra", "DynamoDB", "Elasticsearch", "MariaDB", "Firebase", "Neo4j",
+
+  "AWS", "Azure", "Google Cloud Platform", "Docker", "Kubernetes", "Jenkins",
+  "Terraform", "Ansible", "CI/CD", "Git", "GitHub Actions", "GitLab CI",
+  "Linux", "Nginx", "Apache", "Prometheus", "Grafana", "Helm",
+
+  "Machine Learning", "Deep Learning", "TensorFlow", "PyTorch", "Keras",
+  "scikit-learn", "Pandas", "NumPy", "Natural Language Processing",
+  "Computer Vision", "Data Analysis", "Data Visualization", "Power BI",
+  "Tableau", "Apache Spark", "Hadoop", "Data Engineering", "ETL",
+
+  "JUnit", "PyTest", "Selenium", "Jest", "Mocha", "Cypress", "TestNG",
+  "Postman", "JMeter",
+
+  "Microservices", "REST APIs", "GraphQL", "gRPC", "Message Queues", "Kafka",
+  "RabbitMQ", "WebSockets", "OAuth", "JWT", "System Design",
+
+  "Agile", "Scrum", "Kanban", "Test-Driven Development", "Jira", "Confluence",
+
+  "Maven", "Gradle", "npm", "Yarn", "Hibernate", "JPA", "Lombok",
+
+  "Android Development", "iOS Development", "React Native", "Flutter",
+
+  "Excel", "VBA", "Salesforce", "SAP"
+]

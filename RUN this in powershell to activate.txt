@@ -1,0 +1,33 @@
+RUN this in powershell to activate
+
+1. Go to project folder
+cd C:\Users\venu4\OneDrive\Desktop\AI-Resume-Screening-System\nlp-service
+
+2. Activate existing venv
+.\venv\Scripts\Activate.ps1
+
+You will see:
+
+(venv) PS C:\Users\venu4\OneDrive\Desktop\AI-Resume-Screening-System\nlp-service>
+
+run in the folder
+
+3. Start FastAPI
+uvicorn main:app --reload
+
+That's it.
+
+
+to decative 
+
+in powershell 
+
+deactivate
+
+
+done.
+
+
+
+to run the nlp   ---  uvicorn main:app --reload  
+to run the frontend --- npm run dev

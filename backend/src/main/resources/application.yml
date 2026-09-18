@@ -1,0 +1,64 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: ai-resume-screening-backend
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/resume_screening
+    username: postgres
+    password: 4427
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      # Schema is owned by Flyway migrations, not Hibernate. 'validate' fails
+      # fast at startup if the entity mappings drift from the actual schema.
+      ddl-auto: validate
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+        jdbc:
+          time_zone: UTC
+    show-sql: false
+
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+    baseline-on-migrate: true
+
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 6MB
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
+app:
+  jwt:
+    # Override via env var in real deployments. Must be >= 256 bits for HS256.
+    secret: ${JWT_SECRET:this-is-a-development-only-secret-key-please-change-me-in-prod}
+    expiration-ms: ${JWT_EXPIRATION_MS:86400000} # 24 hours
+
+  cors:
+    allowed-origins: http://localhost:5173
+
+  file:
+    upload-dir: ${FILE_UPLOAD_DIR:./uploads/resumes}
+
+  nlp:
+    base-url: http://localhost:8000
+    timeout-seconds: ${NLP_TIMEOUT_SECONDS:30}
+
+  matching:
+    # Minimum match score (0-100) for a candidate to be auto-recommended for shortlisting.
+    shortlist-threshold: ${SHORTLIST_THRESHOLD:65.0}
+
+logging:
+  level:
+    com.resumescreen: INFO
+    org.springframework.security: DEBUG
